@@ -1,77 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <div class="left__section">
-          <div class="logo">
-            <a href="#">
-              <img src="./img/logo.png" alt="" />
-            </a>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>NH</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <div class="right__section">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-
-              <li class="dropdown">
-                <a href="#"> Pages </a>
-                <ul class="dropdown__menu">
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#"> Pages </a>
-                <ul class="dropdown__menu">
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                  <li><a href="#">Our Service</a></li>
-                  <li><a href="#">Our Root</a></li>
-                </ul>
-              </li>
-
-              <li><a href="#">Service</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
 
-    <!-- Hero section -->
-    <section class="hero__section">
-      <div class="hero__container">
-        <div class="inner__section">
-          <div class="text__wrapper">
-            <h2>Hello Ostad</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-              consequuntur mollitia rerum id quia! Non, explicabo laudantium.
-              Nemo, deserunt officiis?.
-            </p>
-          </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Welcome to our website</h2>
+                <p>This is a simple website built with HTML and CSS.</p>
+                <a href="#contact" class="button">Get Started</a>
+            </div>
         </div>
-      </div>
     </section>
-  </body>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Our Team</h2>
+            <p>Meet our team members</p>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="John Doe">
+                    <h3>John Doe</h3>
+                    <p class="position">CEO</p>
+                    <p class="bio">John is our CEO and founder.</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&fit=crop&crop=face" alt="David Chen">
+                    <h3>David Chen</h3>
+                    <p class="position">Designer</p>
+                    <p class="bio">David is our creative designer.</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Mike Johnson">
+                    <h3>Mike Johnson</h3>
+                    <p class="position">Developer</p>
+                    <p class="bio">Mike is our lead developer.</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face" alt="Robert Martinez">
+                    <h3>Robert Martinez</h3>
+                    <p class="position">Manager</p>
+                    <p class="bio">Robert manages our projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us</p>
+            <div class="contact-content">
+                <p>Email: contact@example.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <a href="mailto:contact@example.com" class="button">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>
